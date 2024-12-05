@@ -1,0 +1,372 @@
+body.intro-page {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('0.1.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Pacifico", cursive;
+}
+
+body.story-page {
+  font-family: "Pacifico", cursive;
+  background-color: white;
+}
+
+.welcome-container {
+  color: rgb(247, 120, 192);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.zero-image {
+  width: 260px; 
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.welcome-container h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-container .story-link {
+  margin-top: 20px; 
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.welcome-container .story-link:hover {
+  color: white; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.footer-link {
+  position: fixed;
+  bottom: 10px; 
+  left: 50%;   
+  transform: translateX(-50%);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transform: translateX(-50%) scale(1.1); 
+}
+
+header {
+  background-color: #062d55;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* top */
+  z-index: 1000;
+}
+
+section h2 {
+  margin: 0 auto 10px auto; 
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+
+.parallax-image {
+  position: absolute;  
+  top: 350px;  
+  left: 300px;
+  width: 270px;
+  height: auto;
+  z-index: 6;  
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.secondary-image {
+  width: 280px; 
+  height: auto;
+  position: relative;
+  z-index: 5;
+  transform: translate(-70px, -50px);
+}
+
+.text1-image {
+  width: 500px; 
+  height: auto;
+  position: relative;
+  z-index: 5;
+  transform: translate(230px, 50px);
+}
+
+/* 2 */
+.img21-img {
+  width: 330px;
+  height: auto;
+  position: absolute; 
+  top: 150px; 
+  left: 50%;   
+  transform: translateX(-50%); 
+  z-index: 1;
+}
+
+.img22-img {
+  width: 260px;
+  height: auto;
+  position: absolute; 
+  top: 300px;   
+  left: 350px;     
+  z-index: 2;
+}
+
+.text2-image{
+  width: 450px; 
+  height: auto;
+  position: relative;
+  z-index: 5;
+  transform: translate(450px, 50px);
+}
+/* 3 */
+.img31-img{
+  width: 400px;
+  height: auto;
+  position: absolute; 
+  top: 150px; 
+  left: 50%;   
+  transform: translateX(-50%); 
+  z-index: 1;
+}
+
+.img32-img, .img33-img, .img34-img {
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.img32-hover, .img33-hover, .img34-hover {
+  position: absolute;
+  z-index: 3; 
+  opacity: 0;  /* 保证 hover 图片一开始是透明的 */
+  transition: opacity 0.3s ease; 
+}
+
+.img32-img {
+  width: 230px;
+  height: auto;
+  top: 120px;
+  left: 20%;
+}
+
+.img33-img {
+  width: 150px;
+  height: auto;
+  top: 300px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.img34-img {
+  width: 300px;
+  height: auto;
+  top: 500px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.img32-hover {
+  width: 230px;
+  height: auto;
+  top: 120px;
+  left: 20%;
+}
+
+.img33-hover {
+  width: 150px;
+  height: auto;
+  top: 300px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.img34-hover {
+  width: 300px;
+  height: auto;
+  top: 500px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.text3-image{
+  width: 450px; 
+  height: auto;
+  position: relative;
+  z-index: 5;
+  transform: translate(420px, 50px);
+}
+
+.text3-image:hover {
+  transform: translate(420px, 50px) scale(1.2); 
+}
+
+/* 4 */
+.image4-layout {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding-right: 50px;
+}
+
+.img4-right {
+  width: 550px;
+  height: auto;
+  position: absolute;
+  left: 100px;
+  top: 20%; 
+  z-index: 1; 
+}
+
+.img4-center-right {
+  width: 350px; 
+  height: auto;
+  position: absolute;
+  left: 450px;
+  top: 60%; 
+  transform: translateY(-50%); 
+  z-index: 2; 
+}
+
+.text4-image{
+  width: 350px; 
+  height: auto;
+  position: relative;
+  z-index: 5;
+  transform: translate(-150px, 50px);
+}
+
+/* 5 */
+.img5-image{
+  width: 350px; 
+  height: auto;
+  position: relative;
+  z-index: 5;
+  transform: translate(100px, 50px);
+}
+
+.img5-image:hover {
+  transform: translate(100px, 50px) scale(1.2); 
+}
+
+
+section p {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: 10px auto;
+  line-height: 1.5;
+  position: relative;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li:nth-child(1) a {
+  color: pink;
+}
+
+nav ul li:nth-child(2) a {
+  color: lightyellow;
+}
+
+nav ul li:nth-child(3) a {
+  color: lightgreen;
+}
+
+nav ul li:nth-child(4) a {
+  color: lightblue;
+}
+
+nav ul li:nth-child(5) a {
+  color: #d8b2ff;
+}
+
+
+main {
+  margin-top: 60px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+#section1 { background-image: url('1.PNG'); background-size: cover; }
+#section2 { background-image: url('2.PNG'); background-size: cover; }
+#section3 { background-image: url('3.PNG'); background-size: cover; }
+#section4 { background-image: url('4.PNG'); background-size: cover; }
+#section5 { background-image: url('5.PNG'); background-size: cover; }
